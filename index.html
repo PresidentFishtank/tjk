@@ -7,84 +7,83 @@
     <meta name="author" content="President Fishtank">
     <meta name="description" content="Architecture, Web Design, Coding etc, Jack of All Trades, Master None">
     <meta name="keywords" content="President Fishtank, Architecture, Web Design, Coding">
-    <base href="http://www.pomeroystudio.sg/application/views/" />
+    <base href="C:\Users\nnasi\OneDrive\Documents\HTML" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 </head>
+<body>
   <header>
     <nav>
       <ul>
-        <img id="logo" src="http://www.horizonapp.co/brand/img/horizon-logo-black-square.png" alt="Logo" width="50" height="50">
+        <img id="logo" src="http://www.horizonapp.co/brand/img/horizon-logo-black-square.png" alt="Logo" width="50" height="45">
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Works</a>
+          <a href="C:\Users\nnasi\OneDrive\Documents\HTML\works.htm" class="dropbtn">Works</a>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
           </div>
         </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contacts">Contact</a></li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">About</a>
+          <a href="C:\Users\nnasi\OneDrive\Documents\HTML\fun.htm" class="dropbtn">Fun</a>
           <div class="dropdown-content">
-            <a href="#">Test 1</a>
+            <a href="#">Japan 2018</a>
             <a href="#">Test 2</a>
             <a href="#">Test 3</a>
           </div>
         </li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Fun</a></li>
       </ul>
     </nav>
   </header>
 
-  <br>
-  <br>
-  <br>
-  <div class="row">
-    <div class="col">col1</div>
-    <div class="col">col2</div>
-    <div class="col">col3</div>
+  <div class="slider">
+    <div class="slide1"><h1>TEST1</h1></div>
+    <div class="slide2"><h1>TEST2</h1></div>
+    <div class="slide3"><h1>TEST3</h1></div>
+  </div>
 
-    <div class="row">
-      <div class="col">col1</div>
-      <div class="col">col2</div>
-      <div class="col">col3</div>
+<div class="about" id="about">
+  <h2>ABOUT</h2>
+  <p>Are own design entire former get should. Advantages boisterous day excellence boy. Out between our two waiting wishing. Pursuit he he garrets greater towards amiable so placing. Nothing off how norland delight. Abode shy shade she hours forth its use. Up whole of fancy ye quiet do. Justice fortune no to is if winding morning forming. </p>
+  <img id="aboutimg" style="width:20%;" src="C:\Users\nnasi\OneDrive\Documents\HTML\Tokyo, Japan 5-12 June 2018/IMG_20180609_151522.jpg" alt="Mountain">
+  <img id="aboutimg" style="width:20%;" src="C:\Users\nnasi\OneDrive\Documents\HTML\Tokyo, Japan 5-12 June 2018/IMG_20180607_153314.jpg" alt="Mountain">
+  <img id="aboutimg" style="width:20%;" src="C:\Users\nnasi\OneDrive\Documents\HTML\Tokyo, Japan 5-12 June 2018/IMG_20180607_200155.jpg" alt="Mountain">
+  <img id="aboutimg" style="width:20%;" src="C:\Users\nnasi\OneDrive\Documents\HTML\Tokyo, Japan 5-12 June 2018/IMG_20180607_194153.jpg" alt="Mountain">
+</div>
 
-<br>
-<br>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
-<p>Testing</p>
+<div class="contacts" id="contacts">
+  <h3>CONTACTS</h3>
+  <p style="text-align:center;">someemail@anotheremail.yolo</p>
+  <p style="text-align:center;">9912 1234</p>
+</div>
+
 
 </body>
 </html>

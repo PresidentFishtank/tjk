@@ -1,13 +1,40 @@
-body{
-  margin:0;
+body {
+  /*margin:0;
   background:url("http://ringvemedia.com/server//bg.jpg");
   background-repeat: repeat-y;
-  background-size:100%;
+  background-size:100%;*/
+  padding:0px;
+  margin:0px;
 }
 
-header{
-  background:#767;
-  color:white;
+h1 {
+    border: 3px solid white;
+    padding: 15px;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: black;
+    text-align:center;
+}
+
+h3 {
+    padding-top: 2%;
+    color: black;
+    text-align:center;
+
+}
+
+
+header {
+  color:black;
   position:fixed;
   width:100%;
 }
@@ -16,21 +43,23 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #547a93;
+    background-color: transparent;
+
 }
 
 li {
     float: left;
 }
 
-img{
-    float:left;
-}
 #logo{
-	background-color:#453
-
+	background-color:#453;
+  float:left;
 }
 
+#aboutimg{
+  margin: 1.5%;
+  border-radius: 2%;
+}
 nav ul li a {
     display: inline-block;
     color: white;
@@ -39,18 +68,28 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li:hover {
-    background-color: red;
+nav ul li a:hover {
+    color: purple;
 }
 
 li.dropdown {
     display: inline-block;
 }
 
+.about{
+  padding-left:15%;
+  padding-right:15%;
+}
+
+.contacts{
+  float:none;
+  clear:both;
+}
+
 .dropdown-content {
 	visibility: hidden; /* hides sub-menu */
   opacity: 0;
-  background-color: #708e9f;
+  background-color: gray;
   position: absolute;
   top: 100%;
   left: 0;/* min-width: 160px;*/
@@ -77,16 +116,69 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.row{
-  clear:both;
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
-.col{
-  background:#333;
-  border-radius:2px;
-  color:white;
-  padding:10px .5%;
-  float:left;
+.slider {
+  max-width: 100%;
+  height: 1000px;
+  z-index:-1;
+  position: relative;
+}
+.slide1,.slide2,.slide3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background-image: url("Tokyo, Japan 5-12 June 2018/IMG_20180606_035906.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation:fade 16s infinite;
+  -webkit-animation:fade 16s infinite;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.slide2 {
+  background-image: url("Tokyo, Japan 5-12 June 2018/IMG_20180607_154448.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation:fade2 16s infinite;
+  -webkit-animation:fade2 16s infinite;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.slide3 {
+  background-image: url("Tokyo, Japan 5-12 June 2018/IMG_20180607_194238.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation:fade3 16s infinite;
+-webkit-animation:fade3 16s infinite;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
 }
