@@ -132,7 +132,7 @@ li.dropdown {
   height: 100%;
 }
 .slide1 {
-  background-image: url("gallery/IMG_20180606_035906.jpg");
+  background-image: url("https://presidentfishtank.github.io/tjk/gallery/IMG_20180606_035906.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,7 +142,7 @@ li.dropdown {
   filter: grayscale(100%);
 }
 .slide2 {
-  background-image: url("gallery/IMG_20180607_154448.jpg");
+  background-image: url("https://presidentfishtank.github.io/tjk/gallery/IMG_20180607_154448.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -152,7 +152,7 @@ li.dropdown {
   filter: grayscale(100%);
 }
 .slide3 {
-  background-image: url("gallery/IMG_20180607_194238.jpg");
+  background-image: url("https://presidentfishtank.github.io/tjk/gallery/IMG_20180607_194238.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
