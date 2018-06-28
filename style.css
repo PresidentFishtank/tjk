@@ -48,11 +48,11 @@ ul {
 }
 
 li {
-    float: left;
+    float: right;
 }
 
 #logo{
-	background-color:#453;
+
   float:left;
 }
 
@@ -70,6 +70,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: purple;
+    background-color: gray;
 }
 
 li.dropdown {
