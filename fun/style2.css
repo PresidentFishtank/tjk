@@ -218,10 +218,12 @@ filter: grayscale(100%);
   grid-row: 2/3;
   grid-column: span 10;
   text-align: center;
-  font-size: 300%;
+  font-size: 200%;
   font-family: sans-serif;
   color:black;
 }
+
+
 
   .item1 {
     grid-row: span 4;
@@ -518,6 +520,7 @@ filter: grayscale(100%);
 /* Modal Content */
 .modal-content {
   position: relative;
+
   /*background-color: #fefefe;*/
   margin: auto;
   padding: 0;
@@ -544,7 +547,8 @@ filter: grayscale(100%);
 }
 
 .mySlides {
-  display: none;
+  height: 100%;
+
 }
 
 .cursor {
@@ -585,24 +589,34 @@ filter: grayscale(100%);
 .numbertext {
   color: #f2f2f2;
   font-size: 16px;
-  position: absolute;
-  left:49%;
+  /*left:45%;*/
   background-color: rgba(110, 110, 110, 0.68);
   border-radius: 5px;
-  padding:5px;
-  margin-top: -40px;
+  padding:1px;
+  max-width: 7%;
+  margin: auto;
 }
 
 
 
 div div div img{
-  padding-top: ;
-  height:100%;
+  /*padding-top: ;*/
+  max-height:98%;
+  max-width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border-radius: 5px;
+
 }
+
+div p{
+  text-align:center;
+  max-width:60%;
+  margin: auto;
+  color: rgb(215, 215, 215);
+}
+
+
 /*
 .caption-container {
   text-align: center;
@@ -623,4 +637,45 @@ div div div img{
 .column2nd {
   float: left;
   width: 25%;
+}
+
+@media only screen and (max-width: 1440px){
+  .portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(48, 50px);
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(48, 30px);
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(48, 15px);
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 10px;
+    /*left:45%;*/
+    background-color: rgba(110, 110, 110, 0.68);
+    border-radius: 5px;
+    padding:1px;
+    max-width: 9%;
+    margin: auto;
+  }
 }
